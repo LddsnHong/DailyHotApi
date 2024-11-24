@@ -1,0 +1,10 @@
+Docker 部署
+
+本地构建
+# 构建
+docker build -t dailyhot-api .
+
+# 运行
+docker run -p 66886688 -d dailyhot-api
+# 或使用 Docker Compose
+docker-compose up -d
