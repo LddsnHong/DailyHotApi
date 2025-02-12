@@ -32,7 +32,7 @@
     "dev": "cross-env NODE_ENV=development tsx watch --no-cache src/index.ts",
     "dev:cache": "cross-env NODE_ENV=development tsx watch src/index.ts",
     "build": "tsc --project tsconfig.json",
-    "start": "cross-env NODE_ENV=development tsx dist/index.js"
+    "start": "cross-env NODE_ENV=development node dist/index.js"
   },
   "type": "module",
   "dependencies": {
@@ -49,12 +49,14 @@
     "ioredis": "^5.4.1",
     "md5": "^2.3.0",
     "node-cache": "^5.1.2",
+    "node-fetch": "^3.3.2",
     "rss-parser": "^3.13.0",
     "user-agents": "^1.1.379",
     "winston": "^3.17.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
+    "@types/cheerio": "^0.22.35",
     "@types/md5": "^2.3.5",
     "@types/node": "^22.10.1",
     "@types/user-agents": "^1.0.4",

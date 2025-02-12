@@ -377,4 +377,37 @@ export type RouterType = {
       }[];
     };
   };
+  linuxdo: {
+    id: string;
+    title: string;
+    url: string;
+    author: string;
+    desc: string;
+    timestamp: string;
+  };
+  hackernews: {
+    id: string;
+    title: string;
+    hot: number | undefined;
+    timestamp: number | undefined;
+    url: string;
+    mobileUrl: string;
+  };
+  github: {
+    id: string;
+    title: string;
+    desc?: string;
+    hot: number | undefined;
+    timestamp: number | undefined;
+    url: string;
+    mobileUrl: string;
+  };
+  producthunt: {
+    id: string;
+    title: string;
+    hot: number | undefined;
+    timestamp: number | undefined;
+    url: string;
+    mobileUrl: string;
+  };
 };
