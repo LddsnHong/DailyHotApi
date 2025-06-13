@@ -411,4 +411,21 @@ export type RouterType = {
     url: string;
     mobileUrl: string;
   };
+  newsmth: {
+    firstArticleId: string;
+    subject: string;
+    article: {
+      topicId: string;
+      postTime: number;
+      subject: string;
+      body: string;
+      account: {
+        name: string;
+      };
+    };
+    board: {
+      title: string;
+      name: string;
+    };
+  };
 };
